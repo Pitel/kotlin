@@ -125,6 +125,7 @@ internal class DescriptorKType(
                 return MutableCollectionKClass(
                     classifier as KClass<*>,
                     classDescriptor.fqNameSafe.asString(),
+                    mutableKmClass = null,
                     { container ->
                         classDescriptor.declaredTypeParameters.map { descriptor -> KTypeParameterImpl(container, descriptor) }
                     },
