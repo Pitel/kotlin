@@ -15,7 +15,7 @@ expect annotation class B()
 fun println() {}
 
 fun foo() {
-    @A <!REPEATED_ANNOTATION!>@B<!>
+    @A @B
     println()
 }
 
